@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Positioning</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .rounded-rectangle{
+            background-color: rgb(123, 13, 89);
+            border-radius: 25px;
+        }
+        div{
+            width: 100px; height: 100px; background-color: blue;
+        }
+        .container{
+            width: 100%;
+            color: white;
+            margin-bottom: 10px;
+        }
+        main{
+            margin: 5px;
+        }
+        .circle{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .box-1{
+            width: 300px;
+            height: 100px;
+            border: 5px solid rgb(1, 0, 1);
+            background-color: aquamarine;
+            color: black;
+            box-sizing: border-box;
+
+        }
+        .box-2{
+            width: 300px;
+            height: 100px;
+            border: 5px solid rgb(1, 0, 1);
+            background-color: cornflowerblue;
+            color: black;
+            box-sizing: border-box;
+
+        }
+        .block{
+            display: block;
+            width:100px;
+        }
+        .inline-block{
+            display: inline-block;
+            width: 250px;
+        }
+        .relative{
+            background-color: green;
+            border: none;
+            position: relative;
+
+        }
+        .absolute{
+            background-color: lightcoral;
+            position: absolute;
+            top: 0px;
+            left: 10px;
+
+        }
+        .fixed{
+            background-color: rgb(3, 51, 51);
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+            width: 50px;
+        }
+        .sticky{
+            background-color: yellow;
+            position: sticky;
+            bottom: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">Container 1</div>
+        <div class="rounded-rectangle
+        container">rounded rectangle</div>
+        <div class="container circle">circle</div>
+        <div class="container box-1">Box 1</div>
+        <div class="container box-2">Box 2</div>
+        <div class="container block">Block</div>
+        <div class="container block">Block</div>
+        <div class="container inline-block">Inline Block 1</div>
+        <div class="container inline-block">Inline Block 2</div>
+        <div class="container relative">Relative</div>
+        <div class="container absolute">Absolute</div>
+        <div class="container fixed">Fixed</div>
+        <div class="container sticky">Sticky</div>
+        <div class="container relative">Relative</div>
+
+
+
+    </main>
+   
+</body>
+</html>
